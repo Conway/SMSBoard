@@ -1,0 +1,6 @@
+Flask==0.10.1
+redis==2.10.5
+flask-socketio==2.7.1
+gunicorn==18.0.0
+eventlet==0.17.4
+netaddr==0.7.18

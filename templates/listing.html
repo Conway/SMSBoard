@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Live Message Board</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script type="text/javascript" src="/static/scripts.js"></script>
+    </head>
+    <body>
+        <div class="container">
+          <div class="page-header">
+            <h1>Live message stream</h1>
+            <div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Send a text message to {{config.NUMBER}}, and it will show up here!</div>
+          <p id="viewing">0 people viewing</p>
+          </div>
+          <div class="list-group" id="messages">
+          </div>
+        </div>
+    </body>
+</html>
